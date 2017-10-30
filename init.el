@@ -15,6 +15,7 @@
     elpy
     flycheck
     py-autopep8
+    jedi
     neotree
     tabbar
     material-theme))
@@ -37,6 +38,12 @@
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+
+;; AUTOCOMPLETION
+(autoload 'jedi:setup "jedi" nil t)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
 
 ;; DIRECTORY TREE
 (require 'neotree)
