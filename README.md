@@ -9,6 +9,8 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * Directory navigation tree
 * Tabs for open files
 
+![Screenshot](https://user-images.githubusercontent.com/679068/32171165-8b0b3728-bd77-11e7-8ca4-ad460faa6a11.png)
+
 # Prerequisites
 * Python3, pip3
 * virtualenv (required by the autocompletion server)
