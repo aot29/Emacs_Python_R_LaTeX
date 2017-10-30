@@ -10,7 +10,7 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * Tabs for open files
 * Autocompletion
 
-![Screenshot](https://user-images.githubusercontent.com/679068/32171165-8b0b3728-bd77-11e7-8ca4-ad460faa6a11.png)
+![Screenshot](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 
 # Prerequisites
 * Python3, pip3

@@ -30,6 +30,16 @@
 (load-theme 'material t) ;; load material theme
 (global-linum-mode t) ;; enable line numbers globally
 
+;; REMOVE THE SCRATCH BUFFER AT STARTUP
+;; Makes *scratch* empty.
+(setq initial-scratch-message "")
+
+;; Removes *scratch* from buffer after the mode has been set.
+(defun remove-scratch-buffer ()
+  (if (get-buffer "*scratch*")
+      (kill-buffer "*scratch*")))
+(add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
+
 ;; PYTHON
 (setq py-python-command "/usr/bin/python3")
 (elpy-enable)
@@ -79,6 +89,15 @@
  :foreground "black"
  :underline nil
  :box '(:line-width 5 :color "white" :style nil))
+(set-face-attribute
+ 'tabbar-modified nil
+ :foreground "gold"
+ :box '(:line-width 5 :color "gray20" :style nil))
+(set-face-attribute
+ 'tabbar-selected-modified nil
+ :background "gold"
+ :foreground "black"
+ :box '(:line-width 5 :color "gold" :style nil))
 (set-face-attribute
  'tabbar-button nil
  :box '(:line-width 1 :color "gray20" :style nil))
