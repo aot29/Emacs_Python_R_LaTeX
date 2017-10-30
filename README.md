@@ -1,5 +1,5 @@
 # emacs_python
-Configure emacs as python3 editor.
+Configure GNU Emacs as Python3 editor.
 
 GNU Emacs is a free, open source programming editor: https://www.gnu.org/software/emacs/
 
@@ -21,12 +21,12 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 1. Get the [emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
 2. Install required Python3 packages: `pip3 install -r requirements.txt`
 3. put init.el in ~/.emacs.d
-4. restart emacs. After the first restart, emacs will download and install the necessary packages.
-5. Once Emacs starts, do `M-x jedi:install-server` (in Emacs, M-x generally stands for Alt-x)
+4. Restart emacs. After the first restart, emacs will download and install the necessary packages.
+5. Once Emacs starts, do `M-x jedi:install-server`
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
 
-Purdon​, K. (2015) Emacs - the Best Python Editor? Online: https://realpython.com/blog/python/emacs-the-best-python-editor/
-
 Moore, A.D: (2013) Python Code completion in Emacs — at last! Online: http://www.alandmoore.com/blog/2013/07/31/python-code-completion-in-emacs-at-last/
+
+Purdon​, K. (2015) Emacs - the Best Python Editor? Online: https://realpython.com/blog/python/emacs-the-best-python-editor/
