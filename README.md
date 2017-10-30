@@ -8,6 +8,7 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * Python-mode, syntax checking, code style (pep8)
 * Directory navigation tree
 * Tabs for open files
+* Autocompletion
 
 ![Screenshot](https://user-images.githubusercontent.com/679068/32171165-8b0b3728-bd77-11e7-8ca4-ad460faa6a11.png)
 
@@ -17,10 +18,11 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * GNU Emacs 2.4 or newer
 
 # Usage
-2. install flake8 and jedi using pip3
+1. Get the [emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
+2. Install required Python3 packages: `pip3 install -r requirements.txt`
 3. put init.el in ~/.emacs.d
 4. restart emacs. After the first restart, emacs will download and install the necessary packages.
-5. Once Emacs starts, do M-x jedi:install-server (in Emacs, M-x generally stands for Alt-x)
+5. Once Emacs starts, do `M-x jedi:install-server` (in Emacs, M-x generally stands for Alt-x)
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
