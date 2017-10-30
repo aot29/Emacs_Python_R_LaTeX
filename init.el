@@ -53,7 +53,7 @@
 ;; FILE TABS
 (require 'tabbar)
 
-;; Tabbar settings copied from:
+;; Tabbar settings based on:
 ;; Golubev, M. (2011) Emacs tabbar-mode visual tweaks. 
 ;; https://gist.github.com/3demax/1264635
 
@@ -65,9 +65,9 @@
  :box '(:line-width 1 :color "gray20" :style nil))
 (set-face-attribute
  'tabbar-unselected nil
- :background "gray30"
+ :background "gray20"
  :foreground "white"
- :box '(:line-width 5 :color "gray30" :style nil))
+ :box '(:line-width 5 :color "gray20" :style nil))
 (set-face-attribute
  'tabbar-selected nil
  :background "gray75"
@@ -84,7 +84,7 @@
  :box '(:line-width 1 :color "gray20" :style nil))
 (set-face-attribute
  'tabbar-separator nil
- :background "gray20"
+ :background "black"
  :height 0.6)
 
 ;; Change padding of the tabs
