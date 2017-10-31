@@ -29,6 +29,7 @@
 (setq inhibit-startup-message t) ;; hide the startup message
 (load-theme 'material t) ;; load material theme
 (global-linum-mode t) ;; enable line numbers globally
+(set-default 'truncate-lines t) ;; do not wrap
 
 ;; REMOVE THE SCRATCH BUFFER AT STARTUP
 ;; Makes *scratch* empty.
@@ -62,6 +63,18 @@
 
 ;; FILE TABS
 (require 'tabbar)
+
+
+;; https://www.emacswiki.org/emacs/TabBarMode
+(defun my-tabbar-buffer-groups () ;; customize to show all normal files in one group
+   "Returns the name of the tab group names the current buffer belongs to.
+ There are two groups: Emacs buffers (those whose name starts with '*', plus
+ dired buffers), and the rest.  This works at least with Emacs v24.2 using
+ tabbar.el v1.7."
+   (list (cond ((string-equal "*" (substring (buffer-name) 0 1)) "emacs")
+               ((eq major-mode 'dired-mode) "emacs")
+               (t "user"))))
+ (setq tabbar-buffer-groups-function 'my-tabbar-buffer-groups)
 
 ;; Tabbar settings based on:
 ;; Golubev, M. (2011) Emacs tabbar-mode visual tweaks. 
