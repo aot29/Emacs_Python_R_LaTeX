@@ -17,12 +17,16 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * virtualenv (required by the autocompletion server)
 * GNU Emacs 2.4 or newer
 
-# Usage
-1. Get the [emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
+# Installation
+1. Get the [Emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
 2. Install required Python3 packages: `pip3 install -r requirements.txt`
 3. put init.el in ~/.emacs.d
-4. Restart emacs. After the first restart, emacs will download and install the necessary packages.
-5. Once Emacs starts, do `M-x jedi:install-server`
+4. Restart Emacs. After the first restart, emacs will download and install the necessary packages.
+5. Restart Emacs. In Emacs, do `M-x jedi:install-server`
+6. Restart Emacs
+
+# Customizing
+* To set a specific directory as your working directory, open init.el and set the `neotree-dir` variable. The directory will be shown in the tree when you start Emacs.
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
