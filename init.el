@@ -66,6 +66,7 @@
 (require 'neotree)
 (neotree-toggle)
 (neotree-dir "~/")
+(global-set-key [f8] 'neotree-toggle)
 
 ;; FILE TABS
 (require 'tabbar)
