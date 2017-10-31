@@ -9,6 +9,7 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * Directory navigation tree
 * Tabs for open files
 * Autocompletion
+* Standard copy+paste keys (aka Cua-Mode)
 
 ![Screenshot](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 
