@@ -64,13 +64,19 @@
 
 ;; DIRECTORY TREE
 (require 'neotree)
-(neotree-toggle)
-(neotree-dir "~/")
-(global-set-key [f8] 'neotree-toggle)
+(neotree-toggle) ;; show on startup
+
+;; set working dir
+(if  (getenv "WORKSPACE")
+  (setq startdir (getenv "WORKSPACE"))
+  (setq startdir (getenv "HOME"))
+)
+(neotree-dir startdir)
+
+(global-set-key [f8] 'neotree-toggle) ;; set keybinding
 
 ;; FILE TABS
 (require 'tabbar)
-
 
 ;; https://www.emacswiki.org/emacs/TabBarMode
 (defun my-tabbar-buffer-groups () ;; customize to show all normal files in one group
@@ -82,10 +88,6 @@
                ((eq major-mode 'dired-mode) "emacs")
                (t "user"))))
  (setq tabbar-buffer-groups-function 'my-tabbar-buffer-groups)
-
-;; Tabbar settings based on:
-;; Golubev, M. (2011) Emacs tabbar-mode visual tweaks. 
-;; https://gist.github.com/3demax/1264635
 
 ;; Tabbar settings
 (set-face-attribute

@@ -21,13 +21,21 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 # Installation
 1. Get the [Emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
 2. Install required Python3 packages: `pip3 install -r requirements.txt`
-3. put init.el in ~/.emacs.d
+3. copy init.el in ~/.emacs.d
 4. Restart Emacs. After the first restart, emacs will download and install the necessary packages.
 5. Restart Emacs. In Emacs, do `M-x jedi:install-server`
 6. Restart Emacs
 
 # Customizing
-* To set a specific directory as your working directory, open init.el and set the `neotree-dir` variable. The directory will be shown in the tree when you start Emacs.
+
+To set a specific directory as your working directory, set the WORKSPACE environment variable when you launch emacs.
+
+e.g. if you cloned emacs_python to "workspace", create a file ~/.emacs.d/init.el with the following contents:
+```
+(setenv "WORKSPACE" "~/workspace")
+(load "~/workspace/emacs_python/init.el")
+```
+The directory "~/workspace" will be shown in the tree when you start Emacs.
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
