@@ -39,4 +39,5 @@
 (require `python-mode) ;; load ./python-mode.el
 (require `tree-init)   ;; load ./tree-init.el
 (require `tabbar-init) ;; load ./tabbar-init.el
+(require `r-stuff)     ;; load ./r-stuff.el
 

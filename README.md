@@ -17,6 +17,7 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 * Python3, pip3
 * virtualenv (required by the autocompletion server)
 * GNU Emacs 2.4 or newer
+* R and ESS. To install e.g. on Debian do: `apt-get install ess r-recommended`, or else follow the instruction [here](http://members.cbio.mines-paristech.fr/~thocking/primer.html).
 
 # Installation
 1. Get the [Emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
@@ -35,6 +36,8 @@ The directory $WORKSPACE will be shown in the tree when you start Emacs.
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
+
+Hocking, T. (2012) Using R with Emacs and ESS. Online: http://members.cbio.mines-paristech.fr/~thocking/primer.html
 
 Moore, A.D: (2013) Python Code completion in Emacs — at last! Online: http://www.alandmoore.com/blog/2013/07/31/python-code-completion-in-emacs-at-last/
 
