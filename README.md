@@ -3,22 +3,36 @@ Configure GNU Emacs as Python3 and R editor.
 
 GNU Emacs is a free, open source programming editor: https://www.gnu.org/software/emacs/
 
-This is a configuration file for using emacs as Python3 editor. It includes:
+This is a configuration for using Emacs as Python3 and R editor. It includes:
+
+UI
 * Styling
-* Standard copy+paste keybindings (aka Cua-Mode)
-* Python-mode, syntax checking, code style (pep8)
-* Autocompletion
 * Directory navigation tree
 * Tabs for open files
+* Standard copy+paste keybindings (aka Cua-Mode)
+Python 3
+* Syntax checking
+* Code style (pep8)
+* Autocompletion
+R
 * R support (experimental)
 
-![Screenshot](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
+![Screenshot Python](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
+_Editing a Python file, showing autocompletion._
+
+![Screenshot R](https://user-images.githubusercontent.com/679068/32298019-58b13a4e-bf51-11e7-9bf4-55ec4a0c3127.png)
+_Editing an R file, showing a plot._
 
 # Prerequisites
 * Python3, pip3
 * virtualenv (required by the autocompletion server)
 * GNU Emacs 2.4 or newer
-* R and ESS. To install e.g. on Debian do: `apt-get install ess r-recommended`, or else follow the instruction [here](http://members.cbio.mines-paristech.fr/~thocking/primer.html).
+* R and ESS.
+
+To install e.g. on Debian do:
+```
+apt-get install emacs python3 virtualenv ess r-recommended`
+```
 
 # Installation
 1. Get the [Emacs cheat sheet](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf). Remember, `C-x` generally stands for Ctrl-x and `M-x` for Alt-x. 
