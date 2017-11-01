@@ -1,4 +1,4 @@
-# emacs_python
+# emacs_python_R
 Configure GNU Emacs as Python3 and R editor.
 
 GNU Emacs is a free, open source programming editor: https://www.gnu.org/software/emacs/
@@ -10,10 +10,12 @@ UI
 * Directory navigation tree
 * Tabs for open files
 * Standard copy+paste keybindings (aka Cua-Mode)
+
 Python 3
 * Syntax checking
 * Code style (pep8)
 * Autocompletion
+
 R
 * R support (experimental)
 
