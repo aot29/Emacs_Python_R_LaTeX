@@ -5,11 +5,11 @@ GNU Emacs is a free, open source programming editor: https://www.gnu.org/softwar
 
 This is a configuration file for using emacs as Python3 editor. It includes:
 * Styling
+* Standard copy+paste keybindings (aka Cua-Mode)
 * Python-mode, syntax checking, code style (pep8)
+* Autocompletion
 * Directory navigation tree
 * Tabs for open files
-* Autocompletion
-* Standard copy+paste keys (aka Cua-Mode)
 
 ![Screenshot](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 
@@ -28,6 +28,7 @@ This is a configuration file for using emacs as Python3 editor. It includes:
 (load "init.el")
 ```
 The directory $WORKSPACE will be shown in the tree when you start Emacs.
+
 4. Start Emacs. After the first (re)start, Emacs will download and install the necessary packages.
 5. Restart Emacs. In Emacs, do `M-x jedi:install-server`
 6. Restart Emacs
