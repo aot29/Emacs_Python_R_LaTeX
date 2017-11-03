@@ -4,6 +4,7 @@
 
 ;; DIRECTORY TREE
 (require 'neotree)
+(setq neo-theme  'nerd)
 (neotree-toggle) ;; show on startup
 
 ;; set working dir
