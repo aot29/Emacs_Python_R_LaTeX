@@ -35,6 +35,16 @@
       (kill-buffer "*scratch*")))
 (add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
 
+;; customize powerline
+;; (line above the command line at the bottom of the screen)
+(use-package powerline
+  :ensure t)
+(require 'powerline)
+(powerline-default-theme)
+
+(global-hl-line-mode +1)
+(set-face-background hl-line-face "#1c1f26")
+
 ;; Load remaining initailization files
 (require `python-mode) ;; load ./python-mode.el
 (require `tree-init)   ;; load ./tree-init.el

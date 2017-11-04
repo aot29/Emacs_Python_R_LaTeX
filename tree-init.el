@@ -4,7 +4,8 @@
 
 ;; DIRECTORY TREE
 (require 'neotree)
-(setq neo-theme  'nerd)
+(setq neo-theme  'arrow)
+
 (neotree-toggle) ;; show on startup
 
 ;; set working dir
@@ -16,5 +17,11 @@
 
 (global-set-key [f8] 'neotree-toggle) ;; set keybinding
 
-
+(custom-set-faces
+ '(neo-root-dir-face ((t (:foreground "gray80"))))
+ '(neo-dir-link-face ((t (:foreground "gray80"))))
+ '(neo-file-link-face ((t (:foreground "gray80"))))
+ '(neo-button-face ((t (:foreground "gray80"))))
+ '(neo-expand-btn-face ((t (:foreground "gray80"))))
+ )
 
