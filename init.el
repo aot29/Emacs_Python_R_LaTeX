@@ -24,6 +24,9 @@
 (global-linum-mode t) ;; enable line numbers globally
 (set-default 'truncate-lines t) ;; do not wrap
 
+(set-face-attribute 'default nil :font "Droid Sans Mono-10" )
+(set-frame-font "Droid Sans Mono-10" nil t)
+
 ;; Set copy+paste
  (cua-mode t)
     (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
