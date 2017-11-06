@@ -24,8 +24,8 @@
 (global-linum-mode t) ;; enable line numbers globally
 (set-default 'truncate-lines t) ;; do not wrap
 
-(set-face-attribute 'default nil :font "Droid Sans Mono-10" )
-(set-frame-font "Droid Sans Mono-11" nil t)
+;;(set-face-attribute 'default nil :font "Noto Sans Mono-11" )
+;;(set-frame-font "Noto Sans Mono-11" nil t)
 
 ;; Set copy+paste
  (cua-mode t)
