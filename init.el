@@ -25,7 +25,7 @@
 (set-default 'truncate-lines t) ;; do not wrap
 
 (set-face-attribute 'default nil :font "Droid Sans Mono-10" )
-(set-frame-font "Droid Sans Mono-10" nil t)
+(set-frame-font "Droid Sans Mono-11" nil t)
 
 ;; Set copy+paste
  (cua-mode t)

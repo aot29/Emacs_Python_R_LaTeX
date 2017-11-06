@@ -19,7 +19,7 @@
 
 (custom-set-faces
  '(neo-root-dir-face ((t (:foreground "gray80"))))
- '(neo-dir-link-face ((t (:foreground "gray80"))))
+ '(neo-dir-link-face ((t (:foreground "white"))))
  '(neo-file-link-face ((t (:foreground "gray80"))))
  '(neo-button-face ((t (:foreground "gray80"))))
  '(neo-expand-btn-face ((t (:foreground "gray80"))))
