@@ -10,6 +10,11 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
 (unless (package-installed-p `better-defaults) (package-install `better-defaults))
 (unless (package-installed-p `material-theme) (package-install `material-theme))
 
@@ -18,6 +23,9 @@
 (load-theme 'material t) ;; load material theme
 (global-linum-mode t) ;; enable line numbers globally
 (set-default 'truncate-lines t) ;; do not wrap
+
+(set-face-attribute 'default nil :font "Droid Sans Mono-10" )
+(set-frame-font "Droid Sans Mono-11" nil t)
 
 ;; Set copy+paste
  (cua-mode t)
