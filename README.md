@@ -5,25 +5,25 @@ GNU Emacs is a free, open source programming editor: https://www.gnu.org/softwar
 
 This is a configuration for using Emacs as Python3 and R editor. It includes:
 
-UI
+__UI__
 * Styling
 * Directory navigation tree
 * Tabs for open files
 * Standard copy+paste keybindings (aka Cua-Mode)
 
-Python 3
+__Python 3__
 * Syntax checking
 * Code style (pep8)
 * Autocompletion
 
-R
+__R__
 * R support (experimental)
 
 ![Screenshot Python](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 _Editing a Python file, showing autocompletion._
 
 ![Screenshot R](https://user-images.githubusercontent.com/679068/32298019-58b13a4e-bf51-11e7-9bf4-55ec4a0c3127.png)
-_Editing an R file, showing a plot._
+_Editing an R file, showing a plot and an R console._
 
 # Prerequisites
 * Python3, pip3
@@ -33,7 +33,7 @@ _Editing an R file, showing a plot._
 
 To install e.g. on Debian do:
 ```
-apt-get install emacs python3 virtualenv ess r-recommended`
+apt-get install emacs python3 virtualenv ess r-recommended
 ```
 
 # Installation

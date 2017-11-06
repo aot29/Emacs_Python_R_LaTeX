@@ -10,6 +10,11 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
 (unless (package-installed-p `better-defaults) (package-install `better-defaults))
 (unless (package-installed-p `material-theme) (package-install `material-theme))
 
