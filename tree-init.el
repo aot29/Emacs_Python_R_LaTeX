@@ -5,7 +5,6 @@
 ;; DIRECTORY TREE
 (require 'neotree)
 (setq neo-theme  'arrow)
-
 (neotree-toggle) ;; show on startup
 
 ;; set working dir
@@ -26,3 +25,4 @@
  )
 
 (setq neo-hidden-regexp-list '("^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "__pycache__"))
+(setq neo-window-width 30)
