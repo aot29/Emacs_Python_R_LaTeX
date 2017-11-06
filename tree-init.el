@@ -25,3 +25,4 @@
  '(neo-expand-btn-face ((t (:foreground "gray80"))))
  )
 
+(setq neo-hidden-regexp-list '("^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "__pycache__"))
