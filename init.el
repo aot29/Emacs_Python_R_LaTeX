@@ -42,6 +42,7 @@
 (require 'powerline)
 (powerline-default-theme)
 
+;; highlight current line
 (global-hl-line-mode +1)
 (set-face-background hl-line-face "#1c1f26")
 
