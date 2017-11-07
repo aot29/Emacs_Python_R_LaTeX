@@ -25,4 +25,4 @@
  )
 
 (setq neo-hidden-regexp-list '("^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "__pycache__"))
-(setq neo-window-width 30)
+(setq neo-window-width 35)
