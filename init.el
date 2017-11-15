@@ -17,6 +17,7 @@
 
 (unless (package-installed-p `better-defaults) (package-install `better-defaults))
 (unless (package-installed-p `material-theme) (package-install `material-theme))
+(unless (package-installed-p `make-mode) (package-install `make-mode))
 
 ;; BASIC CUSTOMIZATION
 (setq inhibit-startup-message t) ;; hide the startup message
@@ -50,6 +51,9 @@
 ;; highlight current line
 (global-hl-line-mode +1)
 (set-face-background hl-line-face "#1c1f26")
+
+;; add syntax highlighting for makefiles
+(require 'make-mode)
 
 ;; Load remaining initailization files
 (require `python-mode) ;; load ./python-mode.el
