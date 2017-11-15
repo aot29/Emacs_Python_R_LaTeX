@@ -69,3 +69,5 @@ Moore, A.D: (2013) Python Code completion in Emacs — at last! Online: http://w
 Patel, A. (2015) Tab Bar Mode, Emacs Wiki. Online: https://www.emacswiki.org/emacs/TabBarMode 
 
 Purdon​, K. (2015) Emacs - the Best Python Editor? Online: https://realpython.com/blog/python/emacs-the-best-python-editor/
+
+Spinu, V. (2013) ESSAuto-complete, Emacs Wiki. Online: https://www.emacswiki.org/emacs/ESSAuto-complete
