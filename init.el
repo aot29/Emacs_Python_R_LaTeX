@@ -23,6 +23,7 @@
 (load-theme 'material t) ;; load material theme
 (global-linum-mode t) ;; enable line numbers globally
 (set-default 'truncate-lines t) ;; do not wrap
+(prefer-coding-system 'utf-8) ;; use UTF-8
 
 ;; Set copy+paste
  (cua-mode t)
