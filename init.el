@@ -17,6 +17,8 @@
 
 (unless (package-installed-p `better-defaults) (package-install `better-defaults))
 (unless (package-installed-p `material-theme) (package-install `material-theme))
+(unless (package-installed-p `make-mode) (package-install `make-mode))
+(unless (package-installed-p `auto-complete) (package-install `auto-complete))
 
 ;; BASIC CUSTOMIZATION
 (setq inhibit-startup-message t) ;; hide the startup message
@@ -52,9 +54,19 @@
 (global-hl-line-mode +1)
 (set-face-background hl-line-face "#1c1f26")
 
+;; add syntax highlighting for makefiles
+(require 'make-mode)
+
+;; auto-complete
+;; do default config for auto-complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+
 ;; Load remaining initailization files
 (require `python-mode) ;; load ./python-mode.el
 (require `tree-init)   ;; load ./tree-init.el
 (require `tabbar-init) ;; load ./tabbar-init.el
 (require `r-stuff)     ;; load ./r-stuff.el
+(require `data-stuff)  ;; load ./data-stuff.el
 

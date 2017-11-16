@@ -6,18 +6,25 @@ GNU Emacs is a free, open source programming editor: https://www.gnu.org/softwar
 This is a configuration for using Emacs as Python3 and R editor. It includes:
 
 __UI__
-* Styling
-* Directory navigation tree
-* Tabs for open files
-* Standard copy+paste keybindings (aka Cua-Mode)
+* Styling (material-theme)
+* Directory navigation tree (neotree)
+* Tabs for open files (tabbar)
+* Standard copy+paste keybindings (cua-mode)
+* Support for makefiles (make-mode)
+* Built-in with Emacs: syntax highlighting for bash, xml, html, css, ini
 
 __Python 3__
-* Syntax checking
-* Code style (pep8)
-* Autocompletion
+* Python development environment (elpy)
+* Syntax checking (flycheck)
+* Code style (py-autopep8)
+* Autocompletion (jedi)
 
 __R__
-* R support (experimental)
+* Autocompletion (ess auto-complete)
+* Integrated R console (ess-mode)
+
+__Data__
+* Working with csv data: align columns, sort fields etc. (csv-mode)
 
 ![Screenshot Python](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 _Editing a Python file, showing autocompletion._
@@ -62,3 +69,5 @@ Moore, A.D: (2013) Python Code completion in Emacs — at last! Online: http://w
 Patel, A. (2015) Tab Bar Mode, Emacs Wiki. Online: https://www.emacswiki.org/emacs/TabBarMode 
 
 Purdon​, K. (2015) Emacs - the Best Python Editor? Online: https://realpython.com/blog/python/emacs-the-best-python-editor/
+
+Spinu, V. (2013) ESSAuto-complete, Emacs Wiki. Online: https://www.emacswiki.org/emacs/ESSAuto-complete

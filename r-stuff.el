@@ -14,3 +14,4 @@
 (setq compilation-read-command nil)
 ;;show matching parentheses
 (show-paren-mode 1)
+
