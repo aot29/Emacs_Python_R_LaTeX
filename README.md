@@ -46,6 +46,12 @@ To install e.g. on Debian do:
 apt-get install emacs python3 virtualenv ess r-recommended
 ```
 
+* If you want to use LaTeX, you will need to install a LaTeX distribution, e.g. on Debian, do
+```
+apt-get install texlive-full
+```
+(the Texlive distribution will use approximately 3GB of disk space).
+
 # Installation
 1. Install required Python3 packages: `pip3 install -r requirements.txt`
 2. Add the following lines to your initialization file in  `~ /.emacs.d/init.el` (or create it if it doesn't exist):
