@@ -3,7 +3,7 @@ Configure GNU Emacs as Python3 and R editor.
 
 GNU Emacs is a free, open source programming editor: https://www.gnu.org/software/emacs/
 
-This is a configuration for using Emacs as Python3 and R editor. It includes:
+This is a configuration for using Emacs as Python3, R and LaTeX editor. It includes:
 
 __UI__
 * Styling (material-theme)
@@ -25,6 +25,9 @@ __R__
 
 __Data__
 * Working with csv data: align columns, sort fields etc. (csv-mode)
+
+__LaTeX__
+* Editing LaTeX files (auctex)
 
 ![Screenshot Python](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 _Editing a Python file, showing autocompletion._
@@ -63,6 +66,8 @@ Get the [list of common commands](https://github.com/AlvaroOrtizTroncoso/emacs_p
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
 
 Hocking, T. (2012) Using R with Emacs and ESS. Online: http://members.cbio.mines-paristech.fr/~thocking/primer.html
+
+Kastrup, D. (2017) AUCTeX – Sophisticated document creation. Online: https://www.gnu.org/software/auctex/index.html
 
 Moore, A.D: (2013) Python Code completion in Emacs — at last! Online: http://www.alandmoore.com/blog/2013/07/31/python-code-completion-in-emacs-at-last/
 

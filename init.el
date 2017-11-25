@@ -61,11 +61,17 @@
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
+(ac-flyspell-workaround)
 
-;; Load remaining initailization files
+;; Load remaining initialization files
 (require `python-mode) ;; load ./python-mode.el
 (require `tree-init)   ;; load ./tree-init.el
 (require `tabbar-init) ;; load ./tabbar-init.el
 (require `r-stuff)     ;; load ./r-stuff.el
 (require `data-stuff)  ;; load ./data-stuff.el
+
+;; Load LaTeX stuff
+(require `latex-init)  ;; load ./latex-init.el
+(require `auto-complete-auctex)  ;; load ./latex-init.el
+
 
