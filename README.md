@@ -29,11 +29,16 @@ __Data__
 __LaTeX__
 * Editing LaTeX files (auctex)
 
+# Screenshots
+
 ![Screenshot Python](https://user-images.githubusercontent.com/679068/32175197-7c48b802-bd84-11e7-8828-650a30a0c368.png)
 _Editing a Python file, showing autocompletion._
 
 ![Screenshot R](https://user-images.githubusercontent.com/679068/32298019-58b13a4e-bf51-11e7-9bf4-55ec4a0c3127.png)
 _Editing an R file, showing a plot and an R console._
+
+![Screenshot LaTeX](https://user-images.githubusercontent.com/679068/33244916-3fd226f6-d300-11e7-864b-cbc8b387b110.png)
+_Editing a LaTeX file, showing PDF output._
 
 # Prerequisites
 * Python3, pip3
