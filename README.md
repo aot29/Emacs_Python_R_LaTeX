@@ -1,5 +1,5 @@
 # emacs_python_R
-Configure GNU Emacs as Python3 and R editor.
+Configure GNU Emacs as Python3, R and LaTeX editor.
 
 GNU Emacs is a free, open source programming editor: https://www.gnu.org/software/emacs/
 
