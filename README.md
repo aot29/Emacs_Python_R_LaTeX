@@ -62,7 +62,7 @@ apt-get install texlive-full
 2. Add the following lines to your initialization file in  `~ /.emacs.d/init.el` (or create it if it doesn't exist):
 ```
 (setenv "WORKSPACE" "<path_to_your_workspace_dir>")
-(add-to-list 'load-path "<path_to_where_you_cloned_emacs_python>")
+(add-to-list 'load-path "<path_to_where_you_cloned_emacs_python_r_latex>")
 (load "init.el")
 ```
 The directory $WORKSPACE will be shown in the tree when you start Emacs.
