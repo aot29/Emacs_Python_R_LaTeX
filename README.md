@@ -71,10 +71,10 @@ The directory $WORKSPACE will be shown in the tree when you start Emacs.
 4. Restart Emacs. In Emacs, do `M-x jedi:install-server`
 5. Restart Emacs
 
-Take a look at a [list of common commands](https://github.com/AlvaroOrtizTroncoso/Emacs_Python_R_LaTeX/wiki). 
+Take a look at a [list of common commands](https://github.com/alvarosaurus/Emacs_Python_R_LaTeX/wiki). 
 
 # Known issues
-Please add your issues to the [list of known issues](https://github.com/AlvaroOrtizTroncoso/Emacs_Python_R_LaTeX/issues).
+Please add your issues to the [list of known issues](https://github.com/alvarosaurus/Emacs_Python_R_LaTeX/issues).
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
