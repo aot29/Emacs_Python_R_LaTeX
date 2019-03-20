@@ -48,7 +48,7 @@ _Editing a LaTeX file, showing PDF output._
 
 To install e.g. on Debian do:
 ```
-apt-get install emacs python3 virtualenv ess r-recommended
+apt-get install emacs python3 python3-pip virtualenv ess r-recommended
 ```
 
 * If you want to use LaTeX, you will need to install a LaTeX distribution, e.g. on Debian, do
@@ -59,7 +59,7 @@ apt-get install texlive-full
 
 # Installation
 1. Install required Python3 packages: `pip3 install -r requirements.txt`
-2. Add the following lines to your initialization file in  `~ /.emacs.d/init.el` (or create it if it doesn't exist):
+2. Add the following lines to your initialization file in  `~/.emacs.d/init.el` (or create it if it doesn't exist):
 ```
 (setenv "WORKSPACE" "<path_to_your_workspace_dir>")
 (add-to-list 'load-path "<path_to_where_you_cloned_emacs_python_r_latex>")
@@ -71,10 +71,10 @@ The directory $WORKSPACE will be shown in the tree when you start Emacs.
 4. Restart Emacs. In Emacs, do `M-x jedi:install-server`
 5. Restart Emacs
 
-Take a look at a [list of common commands](https://github.com/alvarosaurus/Emacs_Python_R_LaTeX/wiki). 
+Take a look at a [list of common commands](https://gitlab.com/alvarosaurus/Emacs_Python_R_LaTeX/wikis/home). 
 
 # Known issues
-Please add your issues to the [list of known issues](https://github.com/alvarosaurus/Emacs_Python_R_LaTeX/issues).
+Please add your issues to the [list of known issues](https://gitlab.com/alvarosaurus/Emacs_Python_R_LaTeX/issues).
 
 # References
 Golubev, M. (2011) Emacs tabbar-mode visual tweaks. Online: https://gist.github.com/3demax/1264635 
