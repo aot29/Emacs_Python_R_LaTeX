@@ -64,6 +64,10 @@
 (ac-config-default)
 (ac-flyspell-workaround)
 
+;; indent with spaces instead of tabs for pep8 compatibility
+(setq tab-width 4)
+(setq-default indent-tabs-mode nil)
+
 ;; Load remaining initialization files
 (require `python-mode) ;; load ./python-mode.el
 (require `tree-init)   ;; load ./tree-init.el
@@ -75,4 +79,19 @@
 (require `latex-init)  ;; load ./latex-init.el
 (require `auto-complete-auctex)  ;; load ./latex-init.el
 
+;; PHP and web mode
+(add-to-list 'load-path "~/.emacs.d/php")
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.twig\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+(require 'multi-web-mode)
+(setq mweb-default-major-mode 'html-mode)
 
